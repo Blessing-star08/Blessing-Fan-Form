@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blessing|fan</title>
+    <link rel="stylesheet" href="fan.css">
+</head>
+<body>
+    <header>
+        <h1>Blessing quiz form</h1>
+    </header>
+    <form
+    action="https://formspree.io/f/xpwdndob" method="POST" id="blessingform">
+        <h2>Are you a fan of Blessing ?</h2>
+        <div class="container">
+            <fieldset class="one">
+                <legend>About you...</legend>
+                <label class="question">What is your first name?</label>
+                <input type="text" placeholder="fname" required name="fname">
+                <label class="question">What is your last name?</label>
+                <input type="text" placeholder="lname" required name="lname">
+                <label class="question">Date of birth</label>
+                <input type="date" id="jj/mm/aaaa" required name="birth date">
+                <label class="question">What are your pronoun?</label>
+                <select name="he/she" id="he/she" required name="he/she">
+                    <option value="he">he</option>
+                    <option value="she">she</option>
+                </select>
+            </fieldset>
+            <fieldset class="two">
+                <legend>About Blessing...</legend>
+                <label class="question">How old is she?</label>
+                <label for="option1">
+                    <input type="radio" name="age" class="age" >
+                    17 years old
+                </label>
+                <label for="option2">
+                    <input type="radio" name="age" class="age">
+                    18 years old
+                </label>
+                <label for="option3">
+                    <input type="radio" name="age" class="age">
+                    19 years old
+                </label>
+    
+                <label class="question">Which animals do you think best represent her personality?</label>
+                <label for="num1">
+                    <input type="checkbox" class="num1" name="OWL">
+                    OWL(calm and observant)
+                </label>
+                <label for="num2">
+                    <input type="checkbox" class="num2" name="DOLPHIN">
+                    DOLPHIN (curious and playful)
+                </label>
+                <label for="num3">
+                    <input type="checkbox" class="num3" name="ELEPHANT">
+                    ELEPHANT (resilient and protective of others)
+                </label>
+                <label for="num4">
+                    <input type="checkbox" class="num4" name="DEER">
+                    DEER (calm in chaos)
+                </label>
+                <label for="country">What is her dream country?</label>
+                <label for="country1">
+                    <input type="radio" name="country" class="country">
+                    Japan
+                </label>
+                <label for="country1">
+                    <input type="radio" name="country" class="country">
+                    China
+                </label>
+                <label for="country1">
+                    <input type="radio" name="country" class="country">
+                    South Korea
+                </label>
+                <label>Her favorite color?</label>
+                <input type="color" class="color" name="color">
+                <label for="text area">Anything you would like to say to Blessing...</label>
+                <textarea placeholder="anything"></textarea>
+            </fieldset>
+        </div>
+        <button type="submit" class="submit" name="submit">Submit</button>
+        <input type="hidden" name="_redirect" value>
+    </form>
+    <p id="configurationMessage" style="display: none; color: green;">Submitted and slayed! You're officially part of the cool club.</p>
+    <script src="submit.js"></script>
+</body>
+</html> 

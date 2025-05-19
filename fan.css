@@ -1,0 +1,95 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-image: repeating-linear-gradient(to bottom right, red, yellow);
+    color: black;
+    
+}
+header{
+    text-align: center;
+    height: 4rem;
+}
+h2{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+form{
+    box-sizing: border-box;
+    justify-self: center;
+}
+.container{
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    height: 75%;
+    width: 70%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+    padding: 1rem;
+}
+fieldset{
+    border-radius: 20px;
+    border: 0.5px solid;
+}
+label{
+    padding: 0;
+    margin: 0;
+    display: block;
+} 
+input{
+    border: 1px;
+    border-radius: 5px;
+    height: 20px;
+    border-style: double;
+    margin-bottom: 1rem;
+}
+input.radio{
+    display: inline-block;
+}
+
+input.age{
+    cursor: pointer;
+}
+input.country{
+    cursor: pointer;
+}
+textarea{
+    border-radius: 5px;
+    border: 1px solid #ecfdf5 ;
+}
+button.submit{
+    margin-top: 1rem;
+    width: 6rem;
+    background-color: #6f82da;
+    color: antiquewhite;
+    font-size: 16px;
+    height: 1.5rem;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+button.submit:hover{
+    box-shadow: 0 0 1px 1px rgb(95, 95, 94);
+    background-color: #354ebb;
+}
+button.submit:active{
+    cursor: progress;
+}
+input.color{
+    width: 5rem;
+    height: 1.5rem ;
+    border-radius: 6px;
+}
+#configurationMessage {
+    display: none;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #ecfdf5;
+    font: 16px bold #10b981;
+
+}
+
+
